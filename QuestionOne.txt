@@ -1,0 +1,67 @@
+Question #1: Turning Strings to URLs
+URLs cannot have spaces. Instead, all spaces in a string are replaced with %20. Write an algorithm that replaces all spaces in a string with %20.
+
+You may not use the replace() method or regular expressions to solve this problem. Solve the problem with and without recursion.
+
+Example
+Input: "Jasmine Ann Jones"
+
+Output: "Jasmine%20Ann%20Jones"
+
+all spaces in string with  ""%20" 
+dont use replace method()
+dont use regular expressions
+ with and without recursion
+ 
+ can build error handling/not required
+ 
+ 
+ with recursion
+ 
+ psuedo code
+ 
+ recursive function
+ -----------------
+ set up output array []
+ 
+ input loop through each element for Each 
+ 
+ checks " " and replaces the " " with "%20"
+ 
+ once push changed array onto the output array, join
+ 
+ let stringUrl = = (inputString) => {
+ 	let outputArray = [];
+  [...inputString].forEach(char => outputArray.push((charChaecker(char)));
+  return outputArray.join("");
+ }
+ 
+ let charChecker = (char) => {
+ 	if(char === " ")
+ 	return char;
+ 	} else return char
+ }
+ 
+ stringtoUrl("Jasmibe Ann Jones");
+ 
+ non recursive function:
+ --------------------
+ 
+ let stringToUrl
+ 
+ 
+ 
+ pseudo
+ creaget variable to
+ for loop if input[i] equal " "
+ concat "%20" onto string at index
+ 
+ let stringToUrl = (inputString) => {
+ 	let outputString = "";
+  	if (inputString[i] === " ") {
+    outputString = (outputString(""%20"))
+    } else outputStrung = outputString.concat(inputString[i])
+ }
+
+
+ https://codeshare.io/X8Z1gj
