@@ -19,7 +19,6 @@ dont use regular expressions
  with recursion
  
  psuedo code
- 
  recursive function
  -----------------
  set up output array []
@@ -29,39 +28,33 @@ dont use regular expressions
  checks " " and replaces the " " with "%20"
  
  once push changed array onto the output array, join
+ ---------------
  
- let stringUrl = = (inputString) => {
+ let stringUrl = (inputString) => {
  	let outputArray = [];
-  [...inputString].forEach(char => outputArray.push((charChaecker(char)));
+  [...inputString].forEach(char => outputArray.push((charChaecker(char))));
   return outputArray.join("");
  }
  
  let charChecker = (char) => {
- 	if(char === " ")
+ 	if(char === " ") {
  	return char;
  	} else return char
  }
  
  stringtoUrl("Jasmibe Ann Jones");
  
+ psuedo code
  non recursive function:
  --------------------
- 
- let stringToUrl
- 
- 
- 
- pseudo
- creaget variable to
+ create variable to
  for loop if input[i] equal " "
  concat "%20" onto string at index
- 
+ --------------
+
  let stringToUrl = (inputString) => {
  	let outputString = "";
   	if (inputString[i] === " ") {
     outputString = (outputString(""%20"))
     } else outputStrung = outputString.concat(inputString[i])
  }
-
-
- https://codeshare.io/X8Z1gj

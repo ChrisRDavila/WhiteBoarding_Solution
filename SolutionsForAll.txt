@@ -1,0 +1,49 @@
+#2
+
+nofilter()
+
+function removeDuplicates(inputArray) {
+    return inputArray.filter((item,
+        index) => inputArray.indexOf(item) === index);
+}
+
+removeDuplicates(inputArray);
+
+with filter/recursion 
+
+const removeDuplicates = inputArray.filter(function(element, i, array){ 
+    return (array.indexOf(element) === i) && (array.lastIndexOf(element) === i);
+});
+
+
+#3
+using recursion
+
+
+function newString(input) {
+  if (input.length <= 1) {
+    return input;
+  }
+
+  const charOne = input[0];
+  const CharTwo = input[1];
+
+  if (charOne === charTwo) {
+    return newString(input.substring(1));
+  } else {
+    return firstChar + newString(input.substring(1));
+  }
+}
+
+#4
+
+function unique(string){
+  for(let i = 0; i < string.length; i++){
+    for(let j = i + 1; j < string.length; j++){
+      if(string[i] === string[j]){
+        return false;
+      }
+    }
+  }
+  return true;
+}
