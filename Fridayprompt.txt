@@ -32,11 +32,11 @@ dont use regular expressions
  
  let stringUrl = (inputString) => {
  	let outputArray = [];
-  [...inputString].forEach(char => outputArray.push((charChaecker(char))));
+  [...inputString].forEach(char => outputArray.push((checkSpace(char))));
   return outputArray.join("");
  }
  
- let charChecker = (char) => {
+ let checkSpace = (char) => {
  	if(char === " ") {
  	return char;
  	} else return char
@@ -55,6 +55,6 @@ dont use regular expressions
  let stringToUrl = (inputString) => {
  	let outputString = "";
   	if (inputString[i] === " ") {
-    outputString = (outputString(""%20"))
+    outputString = (outputString("%20"))
     } else outputStrung = outputString.concat(inputString[i])
  }
